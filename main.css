@@ -1,0 +1,144 @@
+body, html {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background: #fff;
+  line-height: 170%;
+  height: 100%;
+}
+
+strong,
+b {
+  font-weight: 600
+}
+
+.justified {
+  text-align: justify;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:#333;
+  height: 1px;
+}
+
+.icon {
+  color: #333;
+}
+
+.section-icon {
+  margin-left: 6px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/*clearfixes*/
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.main-container {
+  background: #fefefe;
+  max-width: 1000px;
+  margin: 25px auto 25px auto;
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  padding: 0px 25px 0px 25px;
+  display: inline-block;
+  width: 100%;
+}
+
+header.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__image {
+  width: 50%;
+  align-self: flex-end;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.content-box {
+  float: left;
+  width: 100%;
+  margin: 0% 0% 3% 0%;
+  background: #F5F5F5;
+  padding: 15px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  border: solid 1px #EAEAEA;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: #fefefe;
+}
+
+/*media queries for small devices*/
+@media screen and (max-width: 678px){
+  /* header */
+  header.container {
+    flex-direction: column;
+  }
+
+  .header__image {
+    width: 100%;
+  }
+
+  /*profile*/
+  .project {
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .project .right,
+  .project .left,
+  .project .content,
+  .project .rating{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .project-image-container {
+    flex: 1;
+    flex-basis: auto;
+  }
+
+  .project-image {
+    max-width: max-content;
+    max-height: max-content;
+    margin-bottom: 5px;
+  }
+
+  .project-image-container {
+    align-items: center;
+    justify-content: center;
+  }
+  
+}

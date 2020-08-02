@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Your Name Here</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link href="main.css" type='text/css' rel='stylesheet'>
+    <script type="module" src="components/experience-entry/experience-entry.js"></script>
+    <script type="module" src="components/education-entry/education-entry.js"></script>
+    <script type="module" src="components/project-entry/project-entry.js"></script>
+</head>
+
+<body>
+    <main class="main-container">
+        <header class='container'>
+            <div class="header__element">
+                <h1>Your Name Here</h1>
+                <div class="content">
+                    <span style="margin-right: 5px; font-size: 14pt;" class="icon fa fa-envelope"></span><b>Email:</b> <a href="">email here</a><br>
+                    <span style="margin-right: 5px; font-size: 14pt;" class="icon fa fa-phone"></span><b>Phone:</b> <a href="">phone here</a><br>
+                    <span style="margin-right: 5px; font-size: 14pt;" class="icon fab fa-github"></span><b>Github:</b> <a href="">@github here</a><br>
+                    <span style="margin-right: 5px; font-size: 14pt;" class="icon fab fa-creative-commons-by"></span><b>Preferred Pronouns:</b> <a href="https://www.mypronouns.org/what-and-why">pronouns here</a>
+                </div>
+            </div>
+            <!--
+                Link to an image that means something to you or that you think looks good.
+            -->
+            <img class="header__image" src="">
+        </header>
+
+        <section class="container">
+            <h2 class="sticky-header">About Me<span class="icon fa fa-male section-icon"></span></h2>
+            <!-- Write a couple of paragraphs about yourself -->
+            <div class="content-box">
+                <p class="justified">
+                </p>
+                <p class="justified">
+                </p>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="sticky-header">Education<span class="icon fa fa-university left section-icon"></span></h2>
+            <!--
+                Enter the data for your education and write something about your experience there.
+                If you put a graduation date that's in the future, it'll be marked as an expected date of graduation.
+            -->
+            <education-entry
+                data-school-name=""
+                data-degree-name=""
+                data-grad-date=""
+                data-gpa=""
+                data-gpa-scale=""
+            >
+                <p class="justified">
+                </p>
+            </education-entry>
+        </section>
+
+        <section class="container">
+            <h2 class="sticky-header">Experience<span class="icon fa fa-clipboard left section-icon"></span></h2>
+
+            <!--
+                Give the information about your position and write a bit about it.
+                If you still hold a position, just don't include the end-date data attribute on one of these elements.
+            -->
+            <experience-entry
+                data-position=""
+                data-company=""
+                data-start-date=""
+                data-end-date=""
+            >
+                <p class="justified">
+                </p>
+            </experience-entry>
+        </section>
+
+        <section class="container">
+            <h2 class="sticky-header">
+                My Projects <span class="icon fa fa-project-diagram section-icon"></span>
+            </h2>
+            <!-- Tell a little bit about your projects in general. -->
+            <p class="justified">
+            </p>
+
+            <!-- 
+                Enter some information about the projects you worked on.
+                Languages are comma-seperated in the project-languages attribute.
+                I use project-origin to say whether the project was an open source contribution or a school project.
+            -->
+            <project-entry
+                data-project-title=""
+                data-project-origin=""     
+                data-project-languages=""
+            >
+                <p class="justified">
+                </p>
+            </project-entry>
+        </section>
+    </main>
+
+</body>
+</html>

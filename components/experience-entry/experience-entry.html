@@ -1,0 +1,80 @@
+<style>
+    :host {
+        float: left;
+        width: 100%;
+        margin: 0% 0% 3% 0%;
+        background: #F5F5F5;
+        padding: 15px;
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+        border: solid 1px #EAEAEA;
+    }
+
+    .header{
+        float: left;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        margin: 0px 0px 5px 0px;
+    }
+
+    h4 {
+        margin: 0px 0px 5px 0px;
+    }
+
+    .content {
+        float: left;
+        width:100%;
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        color: #aaa;
+        margin-right: 5px;
+    }
+
+    .left {
+        float: left;
+    }
+
+    slot {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*media queries for small devices*/
+    @media screen and (max-width: 678px){
+        /*profile*/
+        :host {
+            width: 100%;
+            margin: 0px 0px 20px 0px;
+        }
+
+        .right,
+        .left,
+        .content,
+        .rating{
+            float: none;
+            text-justify: center;
+        }
+
+        img{
+            width: 85px;
+            height: 85px;
+            margin-bottom: 5px;
+        }
+    }
+</style>
+
+<div class="profile">
+    <div class="header">
+        <h3 id='position'></h3>
+        <span id='company-name'></span>
+        <br>
+        <span id='start-date'></span> - <span id='end-date'></span> <span id='location'></span>
+    </div>
+    <div class="content">
+        <slot></slot>
+    </div>
+</div>

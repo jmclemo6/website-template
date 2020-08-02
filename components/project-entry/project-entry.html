@@ -1,0 +1,62 @@
+<style>
+:host {
+  float: left;
+  width: 100%;
+  margin: 0% 0% 3% 0%;
+  background: #F5F5F5;
+  padding: 15px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  border: solid 1px #EAEAEA;
+}
+
+.header{
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.left{
+  float: left;
+  margin-right: 15px;
+}
+
+.right{
+  float: left;
+}
+
+h3 {
+  margin: 0px 0px 5px 0px;
+}
+
+h4 {
+  margin: 0px 0px 5px 0px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  margin-bottom: 10px;
+}
+
+.inner-content {
+  flex: 1;
+}
+
+.icon {
+  color: #aaa;
+  margin-right: 5px;
+}
+</style>
+
+<article class="project">
+    <div class="content">
+        <div class="inner-content">
+            <h3 id="project-title"></h3>
+            <span id="project-origin"></span> | <span id="project-languages"></span>
+            <slot>
+
+            </slot>
+        </div>
+    </div>
+</article>
